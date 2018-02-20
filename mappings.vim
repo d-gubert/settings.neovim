@@ -38,6 +38,10 @@ nnoremap <silent> <A-Right> <C-W>20>
 nnoremap <silent> <A-Up> <C-W>5+
 nnoremap <silent> <A-Down> <C-W>5-
 
+" Reload Neovim settings
 noremap <F6> :source $HOME/.config/nvim/init.vim<CR>
-noremap <F18> :source Session.vim<CR>
+
+" Session handling
+noremap <F3> :source Session.vim<CR>
+noremap <F15> :mks!<CR>
 

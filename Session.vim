@@ -7,14 +7,14 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +15 init.vim
 badd +1 ~/.config/nvim
-badd +34 init.vim
 badd +1 settings.vim
-badd +2 mappings.vim
+badd +46 mappings.vim
 badd +1 colors
-badd +0 functions.vim
-badd +0 autocmd.vim
-badd +0 vim-plug.vim
+badd +1 functions.vim
+badd +1 autocmd.vim
+badd +1 vim-plug.vim
 argglobal
 silent! argdel *
 $argadd ~/.config/nvim
@@ -42,17 +42,17 @@ wincmd w
 wincmd t
 set winminheight=1 winminwidth=1 winheight=1 winwidth=1
 exe '1resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 1resize ' . ((&columns * 104 + 156) / 312)
+exe 'vert 1resize ' . ((&columns * 77 + 116) / 232)
 exe '2resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 2resize ' . ((&columns * 104 + 156) / 312)
+exe 'vert 2resize ' . ((&columns * 77 + 116) / 232)
 exe '3resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 3resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 3resize ' . ((&columns * 76 + 116) / 232)
 exe '4resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 4resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 4resize ' . ((&columns * 76 + 116) / 232)
 exe '5resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 5resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 5resize ' . ((&columns * 77 + 116) / 232)
 exe '6resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 6resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 6resize ' . ((&columns * 77 + 116) / 232)
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -87,7 +87,12 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 11
-normal! 080|
+let s:c = 77 - ((36 * winwidth(0) + 38) / 77)
+if s:c > 0
+  exe 'normal! ' . s:c . '|zs' . 77 . '|'
+else
+  normal! 077|
+endif
 lcd ~/.config/nvim
 wincmd w
 argglobal
@@ -101,11 +106,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 5 - ((4 * winheight(0) + 14) / 28)
+let s:l = 45 - ((25 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+45
 normal! 0
 lcd ~/.config/nvim
 wincmd w
@@ -139,12 +144,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 51 - ((27 * winheight(0) + 14) / 28)
+let s:l = 50 - ((26 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-51
-normal! 019|
+50
+normal! 0
 lcd ~/.config/nvim
 wincmd w
 argglobal
@@ -166,19 +171,19 @@ normal! zt
 normal! 032|
 lcd ~/.config/nvim
 wincmd w
-2wincmd w
+3wincmd w
 exe '1resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 1resize ' . ((&columns * 104 + 156) / 312)
+exe 'vert 1resize ' . ((&columns * 77 + 116) / 232)
 exe '2resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 2resize ' . ((&columns * 104 + 156) / 312)
+exe 'vert 2resize ' . ((&columns * 77 + 116) / 232)
 exe '3resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 3resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 3resize ' . ((&columns * 76 + 116) / 232)
 exe '4resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 4resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 4resize ' . ((&columns * 76 + 116) / 232)
 exe '5resize ' . ((&lines * 28 + 30) / 60)
-exe 'vert 5resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 5resize ' . ((&columns * 77 + 116) / 232)
 exe '6resize ' . ((&lines * 29 + 30) / 60)
-exe 'vert 6resize ' . ((&columns * 103 + 156) / 312)
+exe 'vert 6resize ' . ((&columns * 77 + 116) / 232)
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
