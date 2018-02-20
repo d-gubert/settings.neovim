@@ -1,8 +1,6 @@
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
+set tabstop=4 " show existing tab with 4 spaces width
+set shiftwidth=4 " when indenting with '>', use 4 spaces width
+set expandtab " On pressing tab, insert 4 spaces
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -17,14 +15,13 @@ set timeoutlen=1000
 set ttimeoutlen=0
 set shiftround
 set scrolloff=3
-set listchars=space:·  " Display extra whitespace characters
+set listchars=space:·  " Display whitespace characters
 set cursorline
 set list
 set hidden
 set inccommand=nosplit
 set number
 set numberwidth=5
-set expandtab
 set nowrap
 set gdefault
 
@@ -44,7 +41,7 @@ else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
 
-" ##Search tweaks
+" Search tweaks
 set hlsearch
 set incsearch
 
