@@ -42,3 +42,4 @@ noremap <F3> :source Session.vim<CR>
 noremap <F15> :mks!<CR>
 
 nnoremap <C-p> :FuzzyOpen<CR>
+nnoremap <A-f> :FuzzyGrep<CR>
