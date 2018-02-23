@@ -2,7 +2,7 @@
 nnoremap <silent> <ESC> :nohlsearch<CR>
 
 " Search for word under cursor
-noremap <silent> <Leader>\ :execute '/'.expand("<cword>")<CR>
+noremap <silent> <Leader>\ :execute '/'.expand("<cword>")<CR>N
 
 " Search for selected text
 vnoremap // y/<C-R>"<CR>
