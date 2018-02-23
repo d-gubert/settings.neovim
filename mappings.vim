@@ -1,5 +1,8 @@
 " Kill current search
-nnoremap <silent> <Leader>/ :nohlsearch<CR>
+nnoremap <silent> <ESC> :nohlsearch<CR>
+
+" Search for word under cursor
+noremap <silent> <Leader>\ :execute '/'.expand("<cword>")<CR>
 
 " Search for selected text
 vnoremap // y/<C-R>"<CR>

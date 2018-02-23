@@ -17,6 +17,7 @@ set shiftround
 set scrolloff=3
 set listchars=space:·  " Display whitespace characters
 set cursorline
+set cursorcolumn
 set list
 set hidden
 set inccommand=nosplit
@@ -26,6 +27,10 @@ set nowrap
 set gdefault
 
 set pastetoggle=<F2>
+
+" Make searches case-insensitive, unless they contain upper-case letters:
+set ignorecase
+set smartcase
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
