@@ -1,30 +1,37 @@
-set tabstop=4 " show existing tab with 4 spaces width
-set shiftwidth=4 " when indenting with '>', use 4 spaces width
-set expandtab " On pressing tab, insert 4 spaces
-set backspace=2   " Backspace deletes like most programs in insert mode
+set tabstop=4           " show existing tab with 4 spaces width
+set shiftwidth=4        " when indenting with '>', use 4 spaces width
+set expandtab           " On pressing tab, insert 4 spaces
+set backspace=2         " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
-set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
+set noswapfile          " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set history=50
-set ruler         " show the cursor position all the time
-set showcmd       " display incomplete commands
-set laststatus=2  " Always display the status line
-set autowrite     " Automatically :write before running commands
+set ruler               " show the cursor position all the time
+set showcmd             " display incomplete commands
+set laststatus=2        " Always display the status line
+set autowrite           " Automatically :write before running commands
 set showmode
 set timeoutlen=1000
 set ttimeoutlen=0
 set shiftround
-set scrolloff=3
-set listchars=space:·  " Display whitespace characters
-set cursorline
-set cursorcolumn
+set scrolloff=3         " Always show at least 3 lines above/below cursor
+set listchars=space:·   " Display whitespace characters
 set list
-set hidden
+set cursorline          " Highlight cursor line
+set cursorcolumn        " Highlight cursor column
 set inccommand=nosplit
-set number
-set numberwidth=5
-set nowrap
+set number              " Display line number column
+set numberwidth=5       " Width of line number column
+set nowrap              " Don't wrap long lines
 set gdefault
+set backspace=indent,eol,start
+
+" Hide buffers instead of closing them
+" Allows to change buffers with unsaved changes
+set hidden
+
+" Use mouse only in visual mode
+set mouse=v
 
 set pastetoggle=<F2>
 
