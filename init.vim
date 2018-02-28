@@ -8,6 +8,7 @@ let g:python3_host_prog = '/home/douglas/.pyenv/versions/neovim3/bin/python'
 
 source ~/.config/nvim/vim-plug.vim
 source ~/.config/nvim/plugin-config.vim
+source ~/.config/nvim/plugin-mappings.vim
 source ~/.config/nvim/settings.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/autocmd.vim

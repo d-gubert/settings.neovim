@@ -8,9 +8,6 @@ if has("autocmd")
 
     autocmd BufRead,BufNewFile gitconfig set ft=.gitconfig
 
-    " Strip trailing whitespace on write
-    autocmd BufWritePre *.json,*.js,*.vim :call DG_StripTrailingWhitespaces()
-
     " Save session on Vim Close
     autocmd VimLeavePre * :mks!
 endif
