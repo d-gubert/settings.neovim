@@ -26,6 +26,12 @@ Plug 'w0rp/ale'
 " Surround text with stuff
 Plug 'tpope/vim-surround'
 
+" Show indent guides
+Plug 'Yggdroot/indentLine'
+
+" Automatically finish statement
+Plug 'lfilho/cosco.vim'
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'reedes/vim-pencil'
