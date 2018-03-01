@@ -3,7 +3,7 @@ nnoremap <silent> <ESC> :nohlsearch<CR>
 
 " Search for word under cursor
 noremap <Leader>/ /<C-R><C-W><CR>N
-noremap <Leader>\ :%s/<C-R><C-W>/
+noremap <Leader>\ :%s/<C-R><C-W>/<C-R><C-W>
 
 " Search for selected text
 vnoremap // y/<C-R>"<CR>
