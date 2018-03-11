@@ -2,14 +2,17 @@
 nnoremap <silent> <ESC> :nohlsearch<CR>
 
 " Search for word under cursor
-noremap <Leader>/ /<C-R><C-W><CR>N
-noremap <Leader>\ :%s/<C-R><C-W>/<C-R><C-W>
+nnoremap <Leader>/ /<C-R><C-W><CR>N
+nnoremap <Leader>\ :%s/<C-R><C-W>/<C-R><C-W>
 
 " Search for selected text
 vnoremap // y/<C-R>"<CR>
 
 " Replace selected text
-vnoremap <Leader>s y:%s/<C-R>"/
+vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
+
+" Replace in selection
+nnoremap <Leader>S :%s/\%V
 
 " Moving lines up and down
 nnoremap <silent> <C-S-Up> :m .-2<CR>
@@ -53,3 +56,6 @@ map Y y$
 
 " Switch relative line numbers
 nnoremap <Leader>n :set relativenumber!<CR>
+
+" Map Control + Backspace to <C-W>
+inoremap  <C-W>
