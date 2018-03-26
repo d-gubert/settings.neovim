@@ -20,11 +20,13 @@ set list
 set cursorline          " Highlight cursor line
 set cursorcolumn        " Highlight cursor column
 set inccommand=nosplit
+set number              " Display the line number column
 set relativenumber      " Display line number column
 set numberwidth=5       " Width of line number column
 set nowrap              " Don't wrap long lines
 set gdefault
 set backspace=indent,eol,start
+set conceallevel=0      " Don't hide quotes in json files
 
 " Hide buffers instead of closing them
 " Allows to change buffers with unsaved changes

@@ -32,6 +32,9 @@ Plug 'Yggdroot/indentLine'
 " Automatically finish statement
 Plug 'lfilho/cosco.vim'
 
+" Auto-close xhtml tags
+" Plug 'alvan/vim-closetag'
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'reedes/vim-pencil'
