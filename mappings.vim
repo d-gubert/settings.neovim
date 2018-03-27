@@ -59,3 +59,9 @@ nnoremap <Leader>n :set relativenumber!<CR>
 
 " Map Control + Backspace to <C-W>
 inoremap  <C-W>
+
+" Open file explorer
+map <C-E> <Esc>:Ex<CR>
+
+" Open file explorer in a new vertical split
+map <A-e> <Esc>:vsp<CR>:Ex<CR>
