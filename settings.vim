@@ -32,8 +32,8 @@ set conceallevel=0      " Don't hide quotes in json files
 " Allows to change buffers with unsaved changes
 set hidden
 
-" Use mouse only in visual mode
-set mouse=v
+" Use mouse anywhere
+set mouse=a
 
 set pastetoggle=<F2>
 
