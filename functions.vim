@@ -23,7 +23,7 @@ function! ConditionalPairMap(open, close)
     endif
 endf
 
-inoremap <expr> ( ConditionalPairMap('(', ')')
-inoremap <expr> { ConditionalPairMap('{', '}')
-inoremap <expr> [ ConditionalPairMap('[', ']')
+"inoremap <expr> ( ConditionalPairMap('(', ')')
+"inoremap <expr> { ConditionalPairMap('{', '}')
+"inoremap <expr> [ ConditionalPairMap('[', ']')
 

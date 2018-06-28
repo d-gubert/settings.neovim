@@ -33,7 +33,7 @@ set conceallevel=0      " Don't hide quotes in json files
 set hidden
 
 " Use mouse anywhere
-set mouse=a
+set mouse=v
 
 set pastetoggle=<F2>
 
