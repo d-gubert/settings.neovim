@@ -15,7 +15,7 @@ set timeoutlen=1000
 set ttimeoutlen=0
 set shiftround
 set scrolloff=3         " Always show at least 3 lines above/below cursor
-set listchars=space:·   " Display whitespace characters
+set listchars=tab:▸\ ,space:· " Display whitespace characters
 set list
 set cursorline          " Highlight cursor line
 set cursorcolumn        " Highlight cursor column
@@ -45,14 +45,14 @@ set smartcase
 set splitbelow
 set splitright
 
-" Make it obvious where 120 characters is
+" Make it obvious where 80 characters is
 " Lifted from StackOverflow user Jeremy W. Sherman
 " http://stackoverflow.com/a/3765575/2250435
 if exists('+colorcolumn')
-    set textwidth=120
+    set textwidth=80
     set colorcolumn=+1
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
 " Search tweaks

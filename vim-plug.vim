@@ -7,7 +7,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Deoplete-tern
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+" Ternjs
+" Plug 'ternjs/tern_for_vim'
 
 " Easy comment
 Plug 'tomtom/tcomment_vim'
@@ -20,6 +23,7 @@ Plug 'cloudhead/neovim-fuzzy'
 
 " Status line on bottom of view
 Plug 'vim-airline/vim-airline'
+Plug 'posva/vim-vue'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
@@ -31,7 +35,13 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
 " Multiple cursors!!
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
+
+" Emmet like funcitonality
+Plug 'mattn/emmet-vim'
+
+" Easymotion
+Plug 'Lokaltog/vim-easymotion'
 
 " Asynchronous Linting Engine
 Plug 'w0rp/ale'
@@ -51,6 +61,9 @@ Plug 'lfilho/cosco.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'reedes/vim-pencil'
+
+" Discord Rich Presence (really don't know why I installed that)
+" Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 
 call plug#end()
 
