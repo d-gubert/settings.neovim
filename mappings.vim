@@ -33,7 +33,8 @@ nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 
 " Map to exit terminal
-tnoremap <ESC> <C-\><C-N>
+tmap <ESC> <C-\><C-N>
+tmap fj <ESC>
 
 " Easily resize windows
 nnoremap <silent> <A-Left> <C-W>20<
