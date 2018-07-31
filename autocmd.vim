@@ -1,6 +1,6 @@
 if has("autocmd")
-    autocmd BufRead,BufNewFile COMMIT_EDITMSG call pencil#init({'wrap': 'soft'})
-                                          \ | set textwidth=0
+    " autocmd BufRead,BufNewFile COMMIT_EDITMSG call pencil#init({'wrap': 'soft'})
+    "                                       \ | set textwidth=0
 
     autocmd BufRead,BufNewFile *.md set filetype=markdown
 
@@ -9,6 +9,6 @@ if has("autocmd")
     autocmd BufRead,BufNewFile gitconfig set ft=.gitconfig
 
     " Save session on Vim Close
-    autocmd VimLeavePre * :mks!
+    " autocmd VimLeavePre * :mks!
 endif
 
