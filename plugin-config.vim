@@ -12,3 +12,10 @@ let g:ale_fixers = ['eslint']
 
 " ALE + Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
+
+" Emmet vim
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}
