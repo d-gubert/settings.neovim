@@ -33,7 +33,7 @@ set conceallevel=0      " Don't hide quotes in json files
 set hidden
 
 " Use mouse anywhere
-set mouse=v
+set mouse=a
 
 set pastetoggle=<F2>
 
@@ -49,7 +49,7 @@ set splitright
 " Lifted from StackOverflow user Jeremy W. Sherman
 " http://stackoverflow.com/a/3765575/2250435
 if exists('+colorcolumn')
-    set textwidth=80
+    set textwidth=95
     set colorcolumn=+1
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
