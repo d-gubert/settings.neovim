@@ -4,10 +4,13 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Deoplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Deoplete-tern
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+" TabNine support
+Plug 'zxqfl/tabnine-vim'
 
 " Ternjs
 " Plug 'ternjs/tern_for_vim'
@@ -19,14 +22,17 @@ Plug 'tomtom/tcomment_vim'
 Plug 'Townk/vim-autoclose'
 
 " Fuzzy finder
-Plug 'cloudhead/neovim-fuzzy'
+" Plug 'cloudhead/neovim-fuzzy'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Status line on bottom of view
 Plug 'vim-airline/vim-airline'
-Plug 'posva/vim-vue'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
+Plug 'tommcdo/vim-fubitive'
+Plug 'tpope/vim-rhubarb'
 
 " Repeat complex commands
 Plug 'tpope/vim-repeat'
@@ -44,7 +50,7 @@ Plug 'mattn/emmet-vim'
 Plug 'Lokaltog/vim-easymotion'
 
 " Asynchronous Linting Engine
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " Surround text with stuff
 Plug 'tpope/vim-surround'
@@ -52,18 +58,28 @@ Plug 'tpope/vim-surround'
 " Show indent guides
 Plug 'Yggdroot/indentLine'
 
+" Detect indentation
+Plug 'ciaranm/detectindent'
+
 " Automatically finish statement
 Plug 'lfilho/cosco.vim'
 
 " Auto-close xhtml tags
 " Plug 'alvan/vim-closetag'
 
+Plug 'digitaltoad/vim-pug'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'reedes/vim-pencil'
+
+" Syntax file
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
+" Framework stuff
+" Plug 'posva/vim-vue'
 
 " Discord Rich Presence (really don't know why I installed that)
 " Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 
 call plug#end()
-

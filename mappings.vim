@@ -1,5 +1,13 @@
 " Kill current search
-nnoremap <silent> <ESC> :nohlsearch<CR>
+nnoremap <silent> <Leader>hh :nohlsearch<CR>
+
+" Kill buffer
+nnoremap <Leader>q :q<CR>
+
+" Search mappings: these will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " Search for word under cursor
 nnoremap <Leader>/ /<C-R><C-W><CR>N
@@ -12,21 +20,30 @@ vnoremap // y/<C-R>"<CR>
 vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
 
 " Replace in selection
-nnoremap <Leader>S :%s/\%V
+" nnoremap <Leader>S :%s/\%V
 
 " Moving lines up and down
-nnoremap <silent> <C-S-Up> :m .-2<CR>
-nnoremap <silent> <C-S-Down> :m .+1<CR>
+nnoremap <silent> <C-S-Up> :m.-2<CR>
+nnoremap <silent> <C-S-Down> :m.+1<CR>
 
 " Easily change windows
-nmap <C-Up> <C-W>k
-nmap <C-Down> <C-W>j
-nmap <C-Left> <C-W>h
-nmap <C-Right> <C-W>l
+" nmap <C-Up> <C-W>k
+" nmap <C-Down> <C-W>j
+" nmap <C-Left> <C-W>h
+" nmap <C-Right> <C-W>l
+
+" Easier window management
+nnoremap <Leader>w <C-W>
+
+" Easier split
+nnoremap <Leader>vs :vs<CR>
+nnoremap <Leader>hs :split<CR>
 
 " Easier shortcut to exit insert mode
 inoremap fj <ESC>
+inoremap FJ <ESC>
 inoremap jf <ESC>
+inoremap JF <ESC>
 
 " Tab navigation with <Tab>
 nnoremap <Tab> gt
@@ -50,7 +67,7 @@ noremap <F3> :source Session.vim<CR>
 noremap <F15> :mks!<CR>
 
 " Easier saving
-noremap <Leader>w :w<CR>
+noremap <Leader>s :w<CR>
 
 " Make Y behave like other capitals. Yank to end of line.
 map Y y$
@@ -62,7 +79,7 @@ nnoremap <Leader>n :set relativenumber!<CR>
 inoremap  <C-W>
 
 " Open file explorer
-map <C-E> <Esc>:Ex<CR>
+map <silent> <Leader>e <Esc>:Ex<CR>
 
 " Open file explorer in a new vertical split
 map <A-e> <Esc>:vsp<CR>:Ex<CR>

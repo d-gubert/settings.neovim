@@ -1,6 +1,6 @@
-set tabstop=4           " show existing tab with 4 spaces width
-set shiftwidth=4        " when indenting with '>', use 4 spaces width
-set expandtab           " On pressing tab, insert 4 spaces
+" set tabstop=4           " show existing tab with 4 spaces width
+" set shiftwidth=4        " when indenting with '>', use 4 spaces width
+" set expandtab           " On pressing tab, insert 4 spaces
 set backspace=2         " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -49,7 +49,7 @@ set splitright
 " Lifted from StackOverflow user Jeremy W. Sherman
 " http://stackoverflow.com/a/3765575/2250435
 if exists('+colorcolumn')
-    set textwidth=95
+    " set textwidth=95
     set colorcolumn=+1
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
@@ -59,3 +59,17 @@ endif
 set hlsearch
 set incsearch
 
+"*****************************************************************************
+"" Abbreviations
+"*****************************************************************************
+"" no one is really happy until you have this shortcuts
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
