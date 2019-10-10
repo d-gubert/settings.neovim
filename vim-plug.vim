@@ -10,10 +10,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 " TabNine support
-Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
 
 " Ternjs
 " Plug 'ternjs/tern_for_vim'
+
+" Conquer of Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Easy comment
 Plug 'tomtom/tcomment_vim'
@@ -38,16 +41,16 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-repeat'
 
 " A series of interesting commands
-Plug 'tpope/vim-unimpaired'
+" Plug 'tpope/vim-unimpaired'
 
 " Multiple cursors!!
 " Plug 'terryma/vim-multiple-cursors'
 
 " Emmet like funcitonality
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 
 " Easymotion
-Plug 'Lokaltog/vim-easymotion'
+" Plug 'Lokaltog/vim-easymotion'
 
 " Asynchronous Linting Engine
 Plug 'dense-analysis/ale'
@@ -74,7 +77,7 @@ Plug 'reedes/vim-pencil'
 
 " Syntax file
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " Framework stuff
 " Plug 'posva/vim-vue'
