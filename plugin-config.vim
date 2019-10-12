@@ -19,18 +19,21 @@ set grepprg=rg\ --vimgrep
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
 " Enable auto detect indentation
-autocmd BufReadPost * :DetectIndent
+" autocmd BufReadPost * :DetectIndent
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Ale fixers
-let g:ale_fixers = ['eslint']
+" let g:ale_fixers = ['eslint']
 
 " ALE + Airline will handle the rest.
-let g:airline#extensions#ale#enabled = 1
-let g:ariline#extensions#branch#enabled = 1
+" let g:airline#extensions#ale#enabled = 1
+" let g:ariline#extensions#branch#enabled = 1
 
 " Emmet vim
-let g:user_emmet_settings = {
-\  'javascript' : {
-\      'extends' : 'jsx',
-\  },
-\}
+" let g:user_emmet_settings = {
+" \  'javascript' : {
+" \      'extends' : 'jsx',
+" \  },
+" \}

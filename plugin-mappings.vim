@@ -14,3 +14,15 @@ command! -bang -nargs=* Rg
 
 nnoremap <silent> <Leader>p :Files<CR>
 nnoremap <silent> <Leader>g :Rg<CR>
+
+" CoC config
+nnoremap  <Leader>cd :call CocAction('jumpDefinition')<CR>
+nnoremap  <Leader>cy :call CocAction('jumpTypeDefinition')<CR>
+nnoremap  <Leader>ca :set operatorfunc=<SID>CodeActionFromSelected<CR>g@
+nnoremap  <leader>co :<C-u>CocList outline<cr>
+nnoremap  <leader>cs :<C-u>CocList -I symbols<cr>
+" nnoremap  <Leader>cd <Plug>(coc-definition)
+" nnoremap  <Leader>cy <Plug>(coc-type-definition)
+" nnoremap  <Leader>ca <Plug>(coc-codeaction-selected)
+" nnoremap  <leader>co :<C-u>CocList outline<cr>
+" nnoremap  <leader>cs :<C-u>CocList -I symbols<cr>
