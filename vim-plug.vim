@@ -18,6 +18,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Conquer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" ctags manager
+" Plug 'ludovicchabant/vim-gutentags'
+
 " Easy comment
 Plug 'tomtom/tcomment_vim'
 
@@ -53,7 +56,7 @@ Plug 'tpope/vim-repeat'
 " Plug 'Lokaltog/vim-easymotion'
 
 " Asynchronous Linting Engine
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 " Surround text with stuff
 Plug 'tpope/vim-surround'
@@ -62,21 +65,24 @@ Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 
 " Detect indentation
-Plug 'ciaranm/detectindent'
+" Plug 'ciaranm/detectindent'
 
 " Automatically finish statement
 Plug 'lfilho/cosco.vim'
 
+" Multiple languages
+Plug 'sheerun/vim-polyglot'
+
 " Auto-close xhtml tags
 " Plug 'alvan/vim-closetag'
 
-Plug 'digitaltoad/vim-pug'
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'reedes/vim-pencil'
+" Plug 'digitaltoad/vim-pug'
+" Plug 'pangloss/vim-javascript'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'reedes/vim-pencil'
 
 " Syntax file
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 " Framework stuff

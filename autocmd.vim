@@ -17,7 +17,7 @@ if has("autocmd")
     "" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
     augroup vimrc-sync-fromstart
         autocmd!
-        autocmd BufEnter * :syntax sync maxlines=200
+        autocmd BufEnter * :syntax sync maxlines=500
     augroup END
 
     " Save session on Vim Close

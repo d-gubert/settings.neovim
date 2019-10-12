@@ -11,7 +11,7 @@ let g:indentLine_char = '|'
 " let g:python3_host_prog = "/usr/local/bin/python3"
 
 " Prevent AutoClose weird bug on insert mode
-let g:AutoClosePreserveDotReg = 0
+" let g:AutoClosePreserveDotReg = 0
 
 " FZF + ripgrep config
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'

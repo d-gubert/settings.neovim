@@ -1,6 +1,6 @@
-" set tabstop=4           " show existing tab with 4 spaces width
-" set shiftwidth=4        " when indenting with '>', use 4 spaces width
-" set expandtab           " On pressing tab, insert 4 spaces
+set tabstop=4           " show existing tab with 4 spaces width
+set shiftwidth=4        " when indenting with '>', use 4 spaces width
+set expandtab           " On pressing tab, insert 4 spaces
 set backspace=2         " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
