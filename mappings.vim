@@ -35,6 +35,13 @@ nnoremap <silent> <C-S-Down> :m.+1<CR>
 " Easier window management
 nnoremap <Leader>w <C-W>
 
+" Easier tab management
+nnoremap <Leader>tn :tabe<CR>
+nnoremap <Leader>tq :tabclose<CR>
+
+" Create a terminal split
+nnoremap <Leader>te :split<CR>:terminal<CR>
+
 " Easier split
 nnoremap <Leader>vs :vs<CR>
 nnoremap <Leader>hs :split<CR>
@@ -48,6 +55,10 @@ inoremap JF <ESC>
 " Tab navigation with <Tab>
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
+
+" Buffer navigation
+nnoremap <Leader>bp :bp<CR>
+nnoremap <Leader>bn :bn<CR>
 
 " Map to exit terminal
 tmap <ESC> <C-\><C-N>
@@ -67,10 +78,11 @@ noremap <F3> :source Session.vim<CR>
 noremap <F15> :mks!<CR>
 
 " Easier saving
-noremap <Leader>s :w<CR>
+nnoremap <Leader>ss :w<CR>
+nnoremap <Leader>sq :wq<CR>
 
-" Make Y behave like other capitals. Yank to end of line.
-map Y y$
+" Triggers copy to plus registrer (clipboard)
+map Y "+y
 
 " Switch relative line numbers
 nnoremap <Leader>n :set relativenumber!<CR>
