@@ -71,6 +71,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'lfilho/cosco.vim'
 
 " Multiple languages
+Plug 'Slava/vim-spacebars'
 Plug 'sheerun/vim-polyglot'
 
 " Auto-close xhtml tags

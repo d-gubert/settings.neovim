@@ -1,10 +1,11 @@
 nmap <Leader>; <Plug>(cosco-commaOrSemiColon)
-" imap <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
 
+" ALE config (RIP)
 " nmap <silent> <Leader>f :ALEFix<CR>
 " nmap <silent> <Leader>k <Plug>(ale_previous_wrap)
 " nmap <silent> <Leader>j <Plug>(ale_next_wrap)
 
+" Fzf config
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
@@ -13,14 +14,21 @@ command! -bang -nargs=* Rg
   \   <bang>0)
 
 nnoremap <silent> <Leader>p :Files<CR>
-nnoremap <silent> <Leader>g :Rg<CR>
+" nnoremap <silent> <Leader>g :Rg<CR>
+
+" Fugitive config
+nnoremap <silent> <Leader>gs :Gstatus<CR>
+nnoremap <silent> <Leader>gp :Gpush<CR>
 
 " CoC config
-nnoremap  <Leader>cd :call CocAction('jumpDefinition')<CR>
-nnoremap  <Leader>cy :call CocAction('jumpTypeDefinition')<CR>
-nnoremap  <Leader>ca :set operatorfunc=<SID>CodeActionFromSelected<CR>g@
-nnoremap  <leader>co :<C-u>CocList outline<cr>
-nnoremap  <leader>cs :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <Leader>cd :call CocAction('jumpDefinition')<CR>
+nnoremap <silent> <Leader>ct :call CocAction('jumpTypeDefinition')<CR>
+nnoremap <silent> <Leader>ca :call CocActionAsync('codeAction', '')<CR>
+nnoremap <silent> <Leader>ch :call CocActionAsync('doHover')<CR>
+nnoremap <silent> <Leader>cg :CocSearch <C-R><C-W>
+nnoremap <silent> <Leader>co :<C-u>CocList outline<CR>
+nnoremap <silent> <Leader>cs :<C-u>CocList -I symbols<CR>
+nnoremap <silent> <Leader>cf :<C-u>CocCommand eslint.executeAutofix<CR>:w<CR>
 " nnoremap  <Leader>cd <Plug>(coc-definition)
 " nnoremap  <Leader>cy <Plug>(coc-type-definition)
 " nnoremap  <Leader>ca <Plug>(coc-codeaction-selected)

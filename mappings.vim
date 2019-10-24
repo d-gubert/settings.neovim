@@ -1,8 +1,8 @@
 " Kill current search
 nnoremap <silent> <Leader>hh :nohlsearch<CR>
 
-" Kill buffer
-nnoremap <Leader>q :q<CR>
+" Kill all buffers
+nnoremap <Leader>qa :qa<CR>
 
 " Search mappings: these will make it so that going to the next one in a
 " search will center on the line it's found in.
@@ -22,7 +22,7 @@ vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
 " Replace in selection
 " nnoremap <Leader>S :%s/\%V
 
-" Moving lines up and down
+" Moving lines up and down (not working on Mac ¯\_(ツ)_/¯)
 nnoremap <silent> <C-S-Up> :m.-2<CR>
 nnoremap <silent> <C-S-Down> :m.+1<CR>
 
@@ -79,6 +79,7 @@ noremap <F15> :mks!<CR>
 
 " Easier saving
 nnoremap <Leader>ss :w<CR>
+nnoremap <Leader>sa :wa<CR>
 nnoremap <Leader>sq :wq<CR>
 
 " Triggers copy to plus registrer (clipboard)
