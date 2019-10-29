@@ -22,9 +22,9 @@ vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
 " Replace in selection
 " nnoremap <Leader>S :%s/\%V
 
-" Moving lines up and down (not working on Mac ¯\_(ツ)_/¯)
-nnoremap <silent> <C-S-Up> :m.-2<CR>
-nnoremap <silent> <C-S-Down> :m.+1<CR>
+" Moving lines up and down
+nnoremap <silent> <C-K> :m.-2<CR>
+nnoremap <silent> <C-J> :m.+1<CR>
 
 " Easily change windows
 " nmap <C-Up> <C-W>k
@@ -38,6 +38,7 @@ nnoremap <Leader>w <C-W>
 " Easier tab management
 nnoremap <Leader>tn :tabe<CR>
 nnoremap <Leader>tq :tabclose<CR>
+nnoremap <Leader>tm :tabm
 
 " Create a terminal split
 nnoremap <Leader>te :split<CR>:terminal<CR>
@@ -59,10 +60,15 @@ nnoremap <S-Tab> gT
 " Buffer navigation
 nnoremap <Leader>bp :bp<CR>
 nnoremap <Leader>bn :bn<CR>
+nnoremap <Leader>bl :b#<CR>
+nnoremap <Leader>bs :buffers<CR>
+nnoremap <silent> <Leader>bea :checktime<CR>
+nnoremap <silent> <Leader>bee :e<CR>
 
 " Map to exit terminal
 tmap <ESC> <C-\><C-N>
 tmap fj <ESC>
+tmap FJ fj
 
 " Easily resize windows
 nnoremap <silent> <A-Left> <C-W>20<
@@ -96,3 +102,9 @@ map <silent> <Leader>e <Esc>:Ex<CR>
 
 " Open file explorer in a new vertical split
 map <A-e> <Esc>:vsp<CR>:Ex<CR>
+
+" Easier movements on insert mode
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+inoremap <C-h> <Left>
