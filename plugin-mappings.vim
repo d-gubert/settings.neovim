@@ -18,8 +18,10 @@ nnoremap <Leader>; <Plug>(cosco-commaOrSemiColon)
 
 " Fugitive config
 nnoremap <silent> <Leader>gs :Gstatus<CR>
-nnoremap <silent> <Leader>gp :Gpush<CR>
 nnoremap <silent> <Leader>gb :Gbrowse<CR>
+nnoremap <silent> <Leader>gpp :Gpush<CR>
+nnoremap <silent> <Leader>gpf :Gpush --force<CR>
+nnoremap <silent> <Leader>gpn :Gpush --no-verify<CR>
 
 " CoC config
 nnoremap <silent> <Leader>cd :call CocAction('jumpDefinition')<CR>

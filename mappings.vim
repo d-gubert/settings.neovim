@@ -22,6 +22,9 @@ vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
 " Replace in selection
 " nnoremap <Leader>S :%s/\%V
 
+nnoremap <Leader>o o<ESC>``
+
+
 " Moving lines up and down
 nnoremap <silent> <C-K> :m.-2<CR>
 nnoremap <silent> <C-J> :m.+1<CR>
@@ -108,3 +111,6 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap <C-h> <Left>
+
+" Easier movements on terminal
+tnoremap <C-k> <Up>
