@@ -13,6 +13,9 @@ let g:airline#extensions#tabline#enabled = 1
 " Coc Configuration
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+nmap <silent> [g :<C-u>call CocActionAsync('diagnosticPrevious')<CR>
+nmap <silent> ]g :<C-u>call CocActionAsync('diagnosticNext')<CR>
+
 let g:coc_global_extensions = 'coc-json coc-tsserver coc-tslint-plugin coc-eslint'
 
 " Enable deoplete
