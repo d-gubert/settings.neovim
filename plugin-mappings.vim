@@ -31,6 +31,7 @@ nnoremap <silent> <Leader>ca :call CocActionAsync('codeAction', '')<CR>
 nnoremap <silent> <Leader>ch :call CocActionAsync('doHover')<CR>
 nnoremap <silent> <Leader>cr :call CocActionAsync('rename')<CR>
 nnoremap <silent> <Leader>clp :<C-u>CocList files<CR>
+nnoremap <silent> <Leader>clc :<C-u>CocList commands<CR>
 nnoremap <silent> <Leader>cld :<C-u>CocList diagnostics<CR>
 nnoremap <silent> <Leader>clb :<C-u>CocList buffers<CR>
 nnoremap <silent> <Leader>clo :<C-u>CocList outline<CR>

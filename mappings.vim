@@ -4,6 +4,10 @@ nnoremap <silent> <Leader>hh :nohlsearch<CR>
 " Kill all buffers
 nnoremap <Leader>qa :qa<CR>
 
+" Manage Quicklist
+nnoremap <Leader>qo :copen<CR>
+nnoremap <Leader>qc :cclose<CR>
+
 " Search mappings: these will make it so that going to the next one in a
 " search will center on the line it's found in.
 nnoremap n nzzzv

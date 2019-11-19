@@ -28,6 +28,7 @@ set gdefault
 set backspace=indent,eol,start
 set conceallevel=0      " Don't hide quotes in json files
 set showmatch           " Show matching bracket
+set signcolumn=yes      " Always show sign columns
 
 " Hide buffers instead of closing them
 " Allows to change buffers with unsaved changes
