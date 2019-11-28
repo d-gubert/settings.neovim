@@ -92,4 +92,7 @@ Plug 'sheerun/vim-polyglot'
 " Discord Rich Presence (really don't know why I installed that)
 " Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 
+" WakaTime
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()

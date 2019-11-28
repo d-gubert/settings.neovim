@@ -30,6 +30,7 @@ nnoremap <silent> <Leader>ct :call CocAction('jumpTypeDefinition')<CR>
 nnoremap <silent> <Leader>ca :call CocActionAsync('codeAction', '')<CR>
 nnoremap <silent> <Leader>ch :call CocActionAsync('doHover')<CR>
 nnoremap <silent> <Leader>cr :call CocActionAsync('rename')<CR>
+nnoremap <silent> <Leader>clr :<C-u>call CocAction('jumpReferences')<CR>
 nnoremap <silent> <Leader>clp :<C-u>CocList files<CR>
 nnoremap <silent> <Leader>clc :<C-u>CocList commands<CR>
 nnoremap <silent> <Leader>cld :<C-u>CocList diagnostics<CR>
