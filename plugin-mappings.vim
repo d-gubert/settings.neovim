@@ -24,6 +24,9 @@ nnoremap <silent> <Leader>gpf :Gpush --force<CR>
 nnoremap <silent> <Leader>gpn :Gpush --no-verify<CR>
 
 " CoC config
+nmap <silent> [g :<C-u>call CocActionAsync('diagnosticPrevious')<CR>
+nmap <silent> ]g :<C-u>call CocActionAsync('diagnosticNext')<CR>
+
 nnoremap <Leader>cg :CocSearch <C-R><C-W>
 nnoremap <silent> <Leader>cd :call CocAction('jumpDefinition')<CR>
 nnoremap <silent> <Leader>ct :call CocAction('jumpTypeDefinition')<CR>
@@ -37,8 +40,15 @@ nnoremap <silent> <Leader>cld :<C-u>CocList diagnostics<CR>
 nnoremap <silent> <Leader>clb :<C-u>CocList buffers<CR>
 nnoremap <silent> <Leader>clo :<C-u>CocList outline<CR>
 nnoremap <silent> <Leader>cls :<C-u>CocList -I symbols<CR>
+nnoremap <silent> <Leader>clx :<C-u>CocList extensions<CR>
 nnoremap <silent> <Leader>cfo :call CocActionAsync('format')<CR>
 nnoremap <silent> <Leader>cfx :<C-u>CocCommand eslint.executeAutofix<CR>:w<CR>
+nnoremap <silent> <Leader>cft :<C-u>CocCommand tslint.fixAllProblems<CR>:w<CR>
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <C-space> coc#refresh()
+
+
+" Vista config
+nnoremap <silent> <Leader>vt :<C-u>Vista!!<CR>
+" autocmd FileType vista,vista_kind nnoremap <buffer> <silent> / :<c-u>call vista#finder#fzf#Run()<CR>
