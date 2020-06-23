@@ -24,7 +24,7 @@ vnoremap // y/<C-R>"<CR>
 vnoremap <Leader>s y:%s/<C-R>"/<C-R>"
 
 " Replace in selection
-" nnoremap <Leader>S :%s/\%V
+nnoremap <Leader>S :%s/\%V
 
 nnoremap <Leader>o o<ESC>``
 
@@ -50,10 +50,6 @@ nnoremap <Leader>tm :tabm
 " Create a terminal split
 nnoremap <Leader>te :split<CR>:terminal<CR>
 
-" Easier split
-nnoremap <Leader>vs :vs<CR>
-nnoremap <Leader>hs :split<CR>
-
 " Easier shortcut to exit insert mode
 inoremap fj <ESC>
 inoremap FJ <ESC>
@@ -71,6 +67,8 @@ nnoremap <Leader>bl :b#<CR>
 nnoremap <Leader>bs :buffers<CR>
 nnoremap <silent> <Leader>bea :checktime<CR>
 nnoremap <silent> <Leader>bee :e<CR>
+" Copy buffer filename to + register
+nnoremap <Leader>bc :let @+ = expand("%")<CR>
 
 " Map to exit terminal
 tmap <ESC> <C-\><C-N>
@@ -116,5 +114,3 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap <C-h> <Left>
 
-" Easier movements on terminal
-tnoremap <C-k> <Up>
