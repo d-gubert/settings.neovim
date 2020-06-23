@@ -15,6 +15,21 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 let g:coc_global_extensions = 'coc-json coc-tsserver coc-tslint-plugin coc-eslint'
 
+
+" Vista config
+let g:vista#renderer#enable_icon = 1
+let g:vista_default_executive = 'coc'
+let g:vista_fzf_preview = ['right:50%']
+let g:vista_sidebar_width = 65
+let g:vista_close_on_jump = 1
+
+" Git gutter config
+let g:gitgutter_highlight_linenrs = 1
+let g:gitgutter_preview_win_floating = 0
+
+" Editor config config
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
 " Enable deoplete
 " let g:deoplete#enable_at_startup = 1
 
